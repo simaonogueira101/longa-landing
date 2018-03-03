@@ -35,6 +35,7 @@ body, html {
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
+  padding-bottom: 96px;
 }
 
 @media only screen and (max-width: 940px) {
@@ -63,6 +64,9 @@ body, html {
   }
   img:first-child {
     right: -24px;
+  }
+  h4 {
+    margin-top: 96px;
   }
 }
 
@@ -120,6 +124,9 @@ img:nth-child(2) {
   }
   img:first-child {
     right: 24px;
+  }
+  h4 {
+    margin-top: 124px;
   }
 }
 
@@ -183,7 +190,6 @@ h3 {
 h4 {
   color: var(--purple);
   font-weight: 300;
-  margin-top: 124px;
 }
 
 p {
@@ -192,6 +198,34 @@ p {
   max-width: 550px;
 }
 
+.no-indent {
+  text-indent: 0px;
+}
+
 h4, p {
   font-size: 120%;
+}
+
+input.email {
+  width: 100%;
+  max-width: 550px;
+  height: 42px;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border-style: none;
+  border: solid 1px var(--blue);
+}
+
+.button {
+  height: 42px;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border-style: none;
+  background: var(--blue);
+  color: white;
+  margin-top: 12px;
+  max-width: 550px;
+  width: 100%;
 }
