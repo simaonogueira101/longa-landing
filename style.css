@@ -35,7 +35,7 @@ body, html {
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
-  padding-bottom: 96px;
+  padding-bottom: 52px;
 }
 
 @media only screen and (max-width: 940px) {
@@ -228,4 +228,11 @@ input.email {
   margin-top: 12px;
   max-width: 550px;
   width: 100%;
+}
+
+.copyright {
+  font-size: 14px;
+  text-align: center;
+  text-indent: 0px;
+  margin-bottom: 48px;
 }
