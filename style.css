@@ -1,0 +1,155 @@
+* {
+  font-family: 'Merriweather', serif;
+  --blue: #1A8FE3;
+  --purple: #BEA2C2;
+  --grey: #4E4B5C;
+  color: var(--grey);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #FAFAFA;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 12px;
+  padding-left: 96px;
+  padding-right: 96px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (max-width: 940px) {
+  .container {
+    align-items: flex-start;
+    padding-top: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: -18px;
+  }
+  img:nth-child(2) {
+    right: 100px;
+  }
+  img:first-child {
+    right: -24px;
+  }
+}
+
+.container img {
+  position: absolute;
+  bottom: -100vh;
+  width: 400px;
+  z-index: 0;
+}
+.container h1, .container h2 {
+  z-index: 10;
+}
+img:first-child {
+  animation: intro1 10s;
+  animation-fill-mode: forwards;
+}
+@keyframes intro1 {
+  0% {
+    bottom: -100vh;
+  }
+  100% {
+    bottom: 10vh;
+  }
+}
+
+img:nth-child(2) {
+  animation: intro2 8s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+@keyframes intro2 {
+  0% {
+    bottom: -100vh;
+  }
+  100% {
+    bottom: -5vh;
+  }
+}
+
+@media only screen and (min-width: 940px) {
+  h1 {
+    font-size: 6rem;
+    margin-bottom: -64px;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  img:nth-child(2) {
+    right: 200px;
+  }
+  img:first-child {
+    right: 24px;
+  }
+}
+
+h1 {
+  font-weight: 300;
+}
+h1 strong {
+  font-weight: 900;
+}
+h2 {
+  font-weight: 300;
+}
+
+.care-title, .care-title strong {
+  color: var(--blue);
+}
+
+.brand-name {
+  position: absolute;
+  left: 56px;
+  bottom: 56px;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--blue);
+  z-index: 20;
+}
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 54px;
+  z-index: 20;
+  animation: pulse 2s infinite;
+}
+.arrow-down img {
+  width: 28px;
+}
+@keyframes pulse {
+  0% {
+    bottom: 54px;
+  }
+  60% {
+    bottom: 64px;
+  }
+  80% {
+    bottom: 54px;
+  }
+  90% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 54px;
+  }
+}
+
+.container-regular {
+  min-height: 100vh;
+}
