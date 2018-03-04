@@ -128,6 +128,30 @@ img:nth-child(2) {
   h4 {
     margin-top: 124px;
   }
+  .care-subtitle {
+    text-align: right;
+    max-width: 1200px;
+  }
+  @keyframes intro1 {
+    0% {
+      bottom: -100vh;
+      opacity: 1;
+    }
+    100% {
+      bottom: 10vh;
+      opacity: 0.5;
+    }
+  }
+  @keyframes intro2 {
+    0% {
+      bottom: -100vh;
+      opacity: 1;
+    }
+    100% {
+      bottom: -5vh;
+      opacity: 0.5;
+    }
+  }
 }
 
 h1 {
