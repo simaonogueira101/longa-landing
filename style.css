@@ -273,8 +273,8 @@ input.email {
 }
 
 video {
-  max-width: 550px;
   border: 2px solid var(--blue);
   border-radius: 3px;
-  margin-top: 42px
+  height: 500px;
+  margin-top: 42px;
 }
